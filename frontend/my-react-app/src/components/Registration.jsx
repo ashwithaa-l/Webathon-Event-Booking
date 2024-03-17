@@ -42,6 +42,19 @@ function Registration() {
             <label htmlFor="other">Other</label>
           </div>
         </div>
+
+        <div class="cuser-input-box">
+          <div class="select-box">
+            <select>
+              <option hidden="">Select Event</option>
+              <option>fff</option>
+              <option>ff</option>
+              <option>ff</option>
+              <option>Jjj</option>
+            </select>
+          </div>
+        <input required="" placeholder="Enter your city" type="text"/>
+        </div>
         <div className="form-submit-btn">
           <input type="submit" value="Register" />
         </div>
