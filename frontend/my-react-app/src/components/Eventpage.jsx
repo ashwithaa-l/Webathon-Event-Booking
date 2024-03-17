@@ -11,7 +11,7 @@ function Eventpage(){
   
     const searchEvents = async () => {
       try {
-        const response = await axios.get('webathon-event-booking-backend-92omiqk87-ashwithaa-ls-projects.vercel.app/events');
+        const response = await axios.get('webathon-event-booking-backend-dovczdywo-ashwithaa-ls-projects.vercel.app/events');
         setEvents(response.data);
       } catch (error) {
         console.error(error);

@@ -39,7 +39,7 @@ app.get('/events', async function(request, response) {
           start: '0'
         },
         headers: {
-          'X-RapidAPI-Key': '3667eb7460msh112699b1f400c65p14b5e6jsnb1ebc2a745c7',
+          'X-RapidAPI-Key': '621f77aa6bmsh4a9771efdd7bee7p1ed688jsn3a547051b7d0',
           'X-RapidAPI-Host': 'real-time-events-search.p.rapidapi.com'
         }
       };
