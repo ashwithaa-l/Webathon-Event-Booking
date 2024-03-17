@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 
 // events page
-app.get('/events', async function(request, response) {
+app.get('/events', async function(req, res) {
     const options = {
         method: 'GET',
         url: 'https://real-time-events-search.p.rapidapi.com/search-events',
@@ -45,8 +45,8 @@ app.get('/events', async function(request, response) {
       };
       
       try {
-          const apiResponse = await axios.request(options);
-          console.log(apiResponse.data);
+          const response = await axios.request(options);
+          console.log(response.data);
       } catch (error) {
           console.error(error);
       }
