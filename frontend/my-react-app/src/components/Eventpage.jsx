@@ -55,16 +55,15 @@ function Eventpage(){
 </svg>
 </button>
 </div>
-<div>
-        {events.map((event, index) => (
-          <div key={index}>
-            <h3>{event.name}</h3>
-            <p>{event.description}</p>
-            <p>Date: {event.date}</p>
-            <p>Location: {event.location}</p>
-          </div>
-        ))}
-</div>
+{Array.isArray(events) && events.map((event, index) => (
+  <div key={index}>
+    <h3>{event.name}</h3>
+    <p>{event.description}</p>
+    <p>Date: {event.date}</p>
+    <p>Location: {event.location}</p>
+  </div>
+))}
+
     </div>
 </div>
     </>
