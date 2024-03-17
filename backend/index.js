@@ -52,35 +52,35 @@ app.get('/events', async function(request, response) {
 
 // booking
 
-app.post('/booking',async function(request,response){
-    try{
-        const book=await booking.create({
-            "firstname": request.body.firstname,
-            "lastname": request.body.lastname,
-            "gender":request.body.gender,
-            "email": request.body.email,
-            "phoneno": request.body.phoneno,
-            "eventname":request.body.eventname,
-            "date":request.body.date
-        })
-        response.status(201).json(book);
-    }catch(error){
-        console.error(error);
-        response.status(500).json({error:"internal error"});
-    }
-})
+// app.post('/booking',async function(request,response){
+//     try{
+//         const book=await booking.create({
+//             "firstname": request.body.firstname,
+//             "lastname": request.body.lastname,
+//             "gender":request.body.gender,
+//             "email": request.body.email,
+//             "phoneno": request.body.phoneno,
+//             "eventname":request.body.eventname,
+//             "date":request.body.date
+//         })
+//         response.status(201).json(book);
+//     }catch(error){
+//         console.error(error);
+//         response.status(500).json({error:"internal error"});
+//     }
+// })
 
 
 
-app.get('/getbooking',async function(request,response){
-    try{
-        const getbook=await booking.find({},{eventname:1,date:1})
-        response.status(200).json(getbook)
-    }catch(error){
-            response.status(500).json({
-                "status":"failure",
-                "error":error
-        })
-    }
-})
+// app.get('/getbooking',async function(request,response){
+//     try{
+//         const getbook=await booking.find({},{eventname:1,date:1})
+//         response.status(200).json(getbook)
+//     }catch(error){
+//             response.status(500).json({
+//                 "status":"failure",
+//                 "error":error
+//         })
+//     }
+// })
 
