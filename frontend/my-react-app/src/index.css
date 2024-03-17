@@ -243,9 +243,9 @@ p{
   color: #808080;
   font-size: 1rem;
   background: #FCEDDA;
-}
-*/
-/*===========================NAvigation=======================================
+}*/
+
+/* ===========================NAvigation======================================= */
 
 .main-nav {
   position: fixed;
@@ -301,20 +301,12 @@ p{
   color: black;
   background: rgba(236, 225, 225, 0.815);
 }
-*/
-
-/*=============================================  USER PROFILE   ======================================== 
 
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+/* ============================================  USER PROFILE   ========================================  */
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: 'Josefin Sans', sans-serif;
-}
+
+
 
 body{
    background-color: #f3f3f3;
@@ -419,16 +411,16 @@ body{
   color :#fff;
   display: block;
   font-size: 18px;
-}*/
+}
 
-/*====================================================  FORM FOR REG =========================================
+/* ====================================================  FORM FOR REG ========================================= */
 
 .input-style {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  color: #555;
+  color: black;
   outline: none;
 }
 
@@ -460,15 +452,9 @@ body{
 
 #dropdownContent li:hover {
   background-color: #ddd;
-}*/
-
-/*=====================
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
 }
+
+/* part */
 
 body{
   display: flex;
@@ -602,7 +588,7 @@ body{
   .main-user-info::-webkit-scrollbar{
       width: 0;
   }
-}*/
+}
 
 
 /*============================================LOGIN=============================================*/
