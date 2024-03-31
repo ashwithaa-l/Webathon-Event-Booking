@@ -28,7 +28,7 @@ function Eventpage(){
 
 <input className="searchInput" type="text" name="" placeholder="Search Events"/>
 <button className="searchButton" href="#" onClick={searchEvents}>
-       
+     
       
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
@@ -55,14 +55,7 @@ function Eventpage(){
 </svg>
 </button>
 </div>
-{Array.isArray(events) && events.map((event, index) => (
-  <div key={index}>
-    <h3>{event.name}</h3>
-    <p>{event.description}</p>
-    <p>Date: {event.date}</p>
-    <p>Location: {event.location}</p>
-  </div>
-))}
+
 
     </div>
 </div>
